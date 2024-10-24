@@ -32,6 +32,7 @@ sequenceDiagram
    1. <https://acp.amivoice.com/amivoice_api/>
 1. Vonage でアプリケーション ID と秘密鍵の取得
     1. [Vonage Voice API ガイド](https://zenn.dev/kwcplus/articles/vonage-voice-guide)
+    1. 秘密鍵（private.key）をフォルダ内に配置
 1. OpenAI の API キー取得
     1. <https://platform.openai.com/docs/quickstart>
 1. npm install
