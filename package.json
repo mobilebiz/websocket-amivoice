@@ -1,0 +1,17 @@
+{
+  "name": "vonage-to-amivoice-by-websocket",
+  "version": "0.0.1",
+  "author": "KWC PLUS",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "description": "",
+  "dependencies": {
+    "@vonage/server-sdk": "^3.18.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-ws": "^5.0.2",
+    "openai": "^4.68.4"
+  }
+}
