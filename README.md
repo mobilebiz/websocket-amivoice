@@ -12,6 +12,7 @@ sequenceDiagram
   participant websocket as /websocket
   participant amivoice as AmiVoice
   participant bot as AnswerBot
+  participant ai as OpenAI
 
   user->>answer: 電話
   answer->>con: ユーザをグループ通話に入れる
@@ -21,6 +22,8 @@ sequenceDiagram
   websocket-)amivoice: WebSocket
   amivoice--)websocket: 音声認識結果
   websocket->>bot: 音声認識結果
+  bot->>ai: 質問
+  ai--)bot: 回答
   bot->>answer: 架電 + NCCO
   answer->>con: AnswerBot をグループ通話に入れる
   con--)user: AnswerBot の NCCO
